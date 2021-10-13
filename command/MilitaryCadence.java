@@ -9,18 +9,18 @@ public class MilitaryCadence {
     }
 
     public void singIDontKnow() {
-        readFile("idontknow.txt");
-        clearConsole();
+        readFile("command/idontknow.txt");
+        //clearConsole();
     }
 
     public void singEverywhereWeGo() {
-        readFile("everywhere.txt");
-        clearConsole();
+        readFile("command/everywhere.txt");
+        //clearConsole();
     }
 
     public void singInArmy() {
-        readFile("inarmy.txt");
-        clearConsole();
+        readFile("command/inarmy.txt");
+        //clearConsole();
     }
 
     private void readFile(String fileName) {
@@ -28,8 +28,13 @@ public class MilitaryCadence {
             File file = new File(fileName);
             Scanner fileScanner = new Scanner(file);
             while(fileScanner.hasNext()) {
+                System.out.print("\033[H\033[2J");
+                System.out.flush();
                 System.out.println(fileScanner.nextLine());
                 TimeUnit.MILLISECONDS.sleep(100);
+                //System.out.print("\033[H\033[2J");
+                //System.out.flush();
+               
             }
         fileScanner.close();
         } catch (Exception e) {
@@ -38,9 +43,9 @@ public class MilitaryCadence {
         
     }
 
-    private void clearConsole() {
-        System.out.print("\033[H\033[2J");
-        System.out.flush();
-    }
+    // private void clearConsole() {
+    //     System.out.print("\033[H\033[2J");
+    //     System.out.flush();
+    // }
 
 }
