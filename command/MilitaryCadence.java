@@ -17,21 +17,18 @@ public class MilitaryCadence {
      */
     public void singIDontKnow() {
         readFile("command-design-pattern/command/idontknow.txt");
-        //clearConsole();
     }
     /**
      * this method reads the everywhere.txt file and then "sings it" to the terminal
      */
     public void singEverywhereWeGo() {
         readFile("command-design-pattern/command/everywhere.txt");
-        //clearConsole();
     }
     /**
      * this method reads the inarmy.txt file and then "sings it" to the terminal
      */
     public void singInArmy() {
         readFile("command-design-pattern/command/inarmy.txt");
-        //clearConsole();
     }
     /**
      * this method reads in a file and prints each line to the console after clearing the previous line
@@ -46,8 +43,6 @@ public class MilitaryCadence {
                 System.out.flush();
                 System.out.println(fileScanner.nextLine());
                 TimeUnit.MILLISECONDS.sleep(100);
-                //System.out.print("\033[H\033[2J");
-                //System.out.flush();
                
             }
         fileScanner.close();
@@ -57,9 +52,5 @@ public class MilitaryCadence {
         
     }
 
-    // private void clearConsole() {
-    //     System.out.print("\033[H\033[2J");
-    //     System.out.flush();
-    // }
 
 }
