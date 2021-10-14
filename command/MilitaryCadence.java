@@ -43,7 +43,8 @@ public class MilitaryCadence {
                 System.out.flush();
                 System.out.println(fileScanner.nextLine());
                 TimeUnit.MILLISECONDS.sleep(100);
-               
+                System.out.print("\033[H\033[2J");
+                System.out.flush();
             }
         fileScanner.close();
         } catch (Exception e) {
