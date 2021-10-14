@@ -16,19 +16,19 @@ public class MilitaryCadence {
      * this method reads the idontknow.txt file and then "sings it" to the terminal
      */
     public void singIDontKnow() {
-        readFile("command-design-pattern/command/idontknow.txt");
+        readFile("command/idontknow.txt");
     }
     /**
      * this method reads the everywhere.txt file and then "sings it" to the terminal
      */
     public void singEverywhereWeGo() {
-        readFile("command-design-pattern/command/everywhere.txt");
+        readFile("command/everywhere.txt");
     }
     /**
      * this method reads the inarmy.txt file and then "sings it" to the terminal
      */
     public void singInArmy() {
-        readFile("command-design-pattern/command/inarmy.txt");
+        readFile("command/inarmy.txt");
     }
     /**
      * this method reads in a file and prints each line to the console after clearing the previous line
